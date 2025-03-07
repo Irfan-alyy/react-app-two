@@ -1,0 +1,53 @@
+#root {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  
+}
+
+.read-the-docs {
+  color: #888;
+}
+.create-blog{
+  padding: 30px 50px;
+}
+form{
+  label{
+    display: block;
+    font-size: 1.5em;
+  }
+  input, textarea{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: beige;
+    color: #000000;
+    font-size: 1.2em;
+  }
+  textarea{
+    height: 70px;
+  }
+  button{
+    color: white;
+    background: rgb(220, 120, 137);
+    margin: 10px 0;
+  }
+}
+.active{
+  border-radius: 5px;
+  padding: 5px 10px;
+  background: orange;
+}
+h2,p,h4{
+  color: white;
+}
+#blog{
+  padding: 20px 0;
+}
+
+
+
+
+

@@ -1,0 +1,16 @@
+{
+  "blogs": [
+    {
+      "id": "ae42",
+      "title": "Website clone",
+      "author": "Irfan Ali",
+      "body": "kamin photograph"
+    },
+    {
+      "id": "8d3a",
+      "title": "Love Nature website clone",
+      "author": "ali",
+      "body": "this is test number 33"
+    }
+  ]
+}
