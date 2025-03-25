@@ -1,14 +1,14 @@
 import { NavLink, Link } from "react-router-dom";
-import useTheme from "../assets/theme";
+import useTheme from "../../assets/theme";
 
 
 
 function Header(){
     const {themeMode, lightTheme, darkTheme}=useTheme();
-
+    console.log(themeMode)
     const handleChange=(e)=>{
         const darkMode=e.currentTarget.checked;
-        if(darkMode){
+        if(!darkMode){
             darkTheme()
         }else{
             lightTheme()
@@ -17,7 +17,7 @@ function Header(){
         return(
             <header>
                 <h1>Welcome Home</h1>
-                <input type="checkbox" id="themeBtn"  value="" onChange={(e)=>handleChange(e)} checked={themeMode==='dark'}/>
+                <input type="checkbox" id="themeBtn"  value="" onChange={(e)=>handleChange(e)}/>
                 <nav>
                     <ul>
                         <NavLink to="/" ><li>Home</li></NavLink>

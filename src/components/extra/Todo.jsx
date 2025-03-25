@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { addTodo, removeTodo } from "../assets/Features/todoSlice";
+import { addTodo, removeTodo } from "../../assets/Features/todoSlice";
 import { useSelector, useDispatch } from "react-redux";
 const Todo = () => {
 

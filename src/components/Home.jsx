@@ -1,10 +1,11 @@
 
-import Fruit from "./Fruit";
+import Fruit from "./extra/Fruit";
+
 
 const Home = () => {
     return ( 
         <>
-        <Fruit/>
+        
         </>
      );
 }

@@ -5,19 +5,20 @@ import './App.css/'
 import React, { useEffect ,useState} from 'react';
 import {Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 import Home from './components/Home.jsx'
-import Layout from './assets/Layout.jsx';
-import Contact from './components/Contact';
-import About from './components/About';
-import Services from './components/Services';
-import PageNotFound from './components/PageNotFound';
-import Github ,{ githubLoader }from './components/GitHub';
-import User from './components/User.jsx';
-import Blogs from './components/Blogs'
-import CreateBlog from './components/Create';
-import BlogDetail from './components/BlogDetail';
+import Layout from './components/layout/Layout.jsx';
+import Contact from './components/about/Contact';
+import About from './components//about/About';
+import Services from './components/services/Services';
+import PageNotFound from './components/error/PageNotFound';
+import Github ,{ githubLoader }from './components/extra/GitHub';
+import User from './components/extra/User.jsx';
+import Blogs from './components/blog/Blogs'
+import CreateBlog from './components/blog/Create';
+import BlogDetail from './components/blog/BlogDetail';
 import { ThemeProvider } from './assets/theme';
-import ProtectedRoutes from './components/ProtectedRoutes.jsx';
-import Login from './components/Login.jsx';
+import ProtectedRoutes from './components/layout/ProtectedRoutes.jsx';
+import Login from './components/login/Login.jsx';
+import UserState from './context/UserState.jsx';
 
 function App(){
 
@@ -43,7 +44,7 @@ function App(){
   //     </Route>
     //)
   //)
-
+//heloo
   const router=createBrowserRouter([
     {
       path: "/login",
@@ -52,7 +53,7 @@ function App(){
     },
     {
       path: "/",
-      element: <ProtectedRoutes> <Layout/></ProtectedRoutes>,
+      element: <Layout/>,
       children:[
         {
           path: "",
@@ -100,9 +101,12 @@ function App(){
   ])
     return( 
       <>
+      <UserState>
       <ThemeProvider value={{themeMode, lightTheme, darkTheme}}>
+        
         <RouterProvider router={router}/>
       </ThemeProvider>
+      </UserState>
         </>
       );
 }
