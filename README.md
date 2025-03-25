@@ -40,13 +40,15 @@ This is a **React Blog App** that utilizes **React Router** for navigation and *
 - Redux (for global state management)
 - JavaScript (ES6+)
 - CSS / Tailwind CSS (for styling)
+- Shadcn library
+- Ant Design library
 
 ## Folder Structure
 ```
 /react-blog-app
 ├── src
 │   ├── components  # Reusable UI components
-│   ├── assets      # Redux store, slices, and actions,  layout of entire webste
+│   ├── assets      # Redux store, slices, and actions
 │   ├── App.js      # Main component
 │   ├── index.js    # Entry point
 │
